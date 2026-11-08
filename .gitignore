@@ -1,0 +1,13 @@
+# Dependencies and generated application files
+node_modules/
+.next/
+coverage/
+*.log
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Operating-system files
+.DS_Store
