@@ -2,6 +2,25 @@
 
 A full-stack web application with a product catalogue, account authentication, basket management, checkout integration, order handling and administration routes.
 
+## Review the project
+
+- [Portfolio overview](https://rr11ddzz.github.io/portfolio/#timeless-archives)
+- [Original 2025 homepage preview](https://frontendwatch-ashen.vercel.app/)
+
+The original Vercel homepage was accessible when checked on 9 November 2026, but the catalogue returned an error. Treat that deployment as a historical UI preview: it includes sample marketing content and is not a functioning shop. Account and payment flows have not been verified on that deployment.
+
+## Code walkthrough
+
+1. [Client state and API requests](frontend/context/state.js): account state, product queries, cart updates and checkout requests.
+2. [Express routes](backend/routes): user, basket, payment, order and administration endpoints.
+3. [Backend application](backend/app.js): API composition and middleware.
+
+The browser uses a Next.js/React interface, which calls an Express API backed by MongoDB/Mongoose. Stripe Checkout and Google OAuth are external integrations that require separate configuration.
+
+## Current limitations and next steps
+
+This is an academic portfolio project, not a production-readiness claim. A complete interactive demo needs a configured API, test database and test integration credentials. Next steps are to restore a test-data deployment, replace placeholder marketing content and add automated tests for the catalogue, authentication and checkout workflows.
+
 ## Stack
 
 - Front end: Next.js, React, Tailwind CSS, Material UI
